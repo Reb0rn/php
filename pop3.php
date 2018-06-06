@@ -1,7 +1,7 @@
 <html>
  <?php
 
- $mbox = imap_open("{1.1.1.1/pop3/novalidate-cert}INBOX", "zayavka@bank", "zayavka")
+ $mbox = imap_open("{1.1.1.1/pop3/novalidate-cert}INBOX", "zayavka@mail", "zayavka")
       or die("can't connect: " . imap_last_error());
 
  $check = imap_mailboxmsginfo($mbox);
