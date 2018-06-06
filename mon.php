@@ -13,15 +13,15 @@
 
 <center>
 <br>
-<h2>Мониторинг 10.200.7.82</h2>
+<h2>Мониторинг 10.200.x.n</h2>
 <?PHP
-$host = '10.200.7.82'; 
+$host = '10.200.x.n'; 
 $port = 4080; 
 $waitTimeoutInSeconds = 5; 
 if($fp = fsockopen($host,$port,$errCode,$errStr,$waitTimeoutInSeconds)){   
-    echo "<div style ='font-family: Arial; font-size: 12px;color:#42f468'>10.200.7.82 (port 4080) Online</div>";
+    echo "<div style ='font-family: Arial; font-size: 12px;color:#42f468'>10.200.1.1 (port 4080) Online</div>";
 } else {
-     echo "<div style ='font-family: Arial; font-size: 12px;color:#ff3300'>10.200.7.82 Offline</div>";
+     echo "<div style ='font-family: Arial; font-size: 12px;color:#ff3300'>10.200.1.1 Offline</div>";
 } 
 fclose($fp);
     // integer starts at 0 before counting
@@ -55,23 +55,23 @@ if ($str > "1483243520") {
 	
 ?>
 
-<h2>Мониторинг 10.200.7.84</h2>
+<h2>Мониторинг 10.200.x.xf</h2>
 
 <?PHP
 
-$host = '10.200.7.84'; 
+$host = '10.200.x.x'; 
 $port = 4080; 
 $waitTimeoutInSeconds = 5; 
 if($fp = fsockopen($host,$port,$errCode,$errStr,$waitTimeoutInSeconds)){   
-    echo "<div style ='font-family: Arial; font-size: 12px;color:#42f468'>10.200.7.84 (port 4080) Online</div>";
+    echo "<div style ='font-family: Arial; font-size: 12px;color:#42f468'>10.200.1.84 (port 4080) Online</div>";
 } else {
-     echo "<div style ='font-family: Arial; font-size: 12px;color:#ff3300'>10.200.7.84 Offline</div>";
+     echo "<div style ='font-family: Arial; font-size: 12px;color:#ff3300'>10.200.x.x Offline</div>";
 } 
 fclose($fp);
 
     // integer starts at 0 before counting
     $b = 0; 
-    $dir = 'ftp://10.200.7.84/';
+    $dir = 'ftp://10.200.x.x/';
     if ($handle = opendir($dir)) {
         while (($file = readdir($handle)) !== false){
             if (!in_array($file, array('.', '..')) && !is_dir($dir.$file)) 
@@ -87,7 +87,7 @@ fclose($fp);
 
     echo "В репликаторе: $b файлов<br>";
 
-	$str = filesize('ftp://10.200.7.84/database/1.FDB');
+	$str = filesize('ftp://10.200.x.x/database/1.FDB');
 if ($str > "1483243520") {
     echo "<div style ='font-family: Arial Black; font-size: 18px;color:#ffa64d'> База большая</div>";
 } else {
