@@ -22,7 +22,7 @@
 <?PHP
 header('Content-Type: text/html; charset=UTF-8');
 // открываем папку
-$dh = opendir("ftp://10.200.7.86/st");
+$dh = opendir("ftp://10.200.1.1/st");
 while($filename = readdir($dh))
 {
 // любые операции
